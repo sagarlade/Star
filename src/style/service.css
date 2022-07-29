@@ -1,0 +1,115 @@
+.c {
+    background: black;
+
+}
+
+.c .service_head {
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 40px;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 10px 0;
+}
+
+.service_head:hover,
+.service_head:active,
+.service_head:focus {
+    animation: underline .15s ease-in-out .15s forwards;
+    color: aquamarine;
+}
+
+@keyframes underline {
+    0% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
+
+
+
+.card-container {
+    padding: 50px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.profile-card-4 {
+    max-width: 400px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+    height: 300px;
+    width: 400px;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: rgb(30, 199, 208);
+    font-size: 30px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
